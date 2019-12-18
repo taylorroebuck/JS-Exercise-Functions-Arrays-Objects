@@ -328,6 +328,7 @@ const argTimesTwo = (num) => num * 2; // code here!
  * ### Challenge `carMaker`
  * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
  * COMPLETING ALL NON-STRETCH CHALLENGES IN THE REPOSITORY!
+ * // look up the 'this' keyword
  * 
  * @instructions
  * This function takes a single odometer argument (a number) and returns an object.
@@ -337,9 +338,24 @@ const argTimesTwo = (num) => num * 2; // code here!
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(number) {
+  return {
+    odometer: number,
+    drive: function(distance) {
+      let newOdometer = this.odometer + distance;
+      this.odometer = newOdometer;
+      return newOdometer;
+    }
+  }
 }
+
+// function carMaker(num) {
+//   const object = {
+//     odometer:num,
+//     drive:(distance)=> carMaker.odometer+=distance
+//   }; return object;
+//   /* code here */
+// }
 
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
