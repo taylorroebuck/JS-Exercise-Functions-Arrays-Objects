@@ -349,14 +349,6 @@ function carMaker(number) {
   }
 }
 
-// function carMaker(num) {
-//   const object = {
-//     odometer:num,
-//     drive:(distance)=> carMaker.odometer+=distance
-//   }; return object;
-//   /* code here */
-// }
-
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
